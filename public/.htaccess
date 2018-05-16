@@ -1,0 +1,28 @@
+<IfModule mod_rewrite.c>
+  Options +FollowSymlinks
+  RewriteEngine On
+
+  RewriteCond %{HTTP_HOST} ^zhiailife.cn$ [OR]
+  RewriteCond %{HTTP_HOST} ^www.zhiailife.cn$ [OR]
+  RewriteCond %{HTTP_HOST} ^zhiailife.com$ [OR]
+  RewriteCond %{HTTP_HOST} ^mp.zhiailife.com$ [OR]
+  RewriteCond %{HTTP_HOST} ^zhiailife.net$ [OR]
+  RewriteCond %{HTTP_HOST} ^www.zhiailife.net$ [OR]
+  RewriteCond %{HTTP_HOST} ^zhiailife.cn$ [OR]
+  RewriteCond %{HTTP_HOST} ^www.zhiailife.cn$ [OR]
+  RewriteCond %{HTTP_HOST} ^zhiaishenghuo.cn$ [OR]
+  RewriteCond %{HTTP_HOST} ^www.zhiaishenghuo.cn$ [OR]
+  RewriteCond %{HTTP_HOST} ^zhiaishenghuo.com$ [OR]
+  RewriteCond %{HTTP_HOST} ^www.zhiaishenghuo.com$ [OR]
+  RewriteCond %{HTTP_HOST} ^iamai.com.cn$ [OR]
+  RewriteCond %{HTTP_HOST} ^www.iamai.com.cn$ [OR]
+  RewriteCond %{HTTP_HOST} ^iammai.com.cn$ [OR]
+  RewriteCond %{HTTP_HOST} ^www.iammai.com.cn$ [OR]
+  RewriteCond %{HTTP_HOST} ^ismai.com.cn$ [OR]
+  RewriteCond %{HTTP_HOST} ^www.ismai.com.cn$
+  RewriteRule ^(.*)$ http://www.zhiailife.com/$1 [R=301,L]
+
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^(.*)$ index.php?/$1 [QSA,PT,L]
+</IfModule>

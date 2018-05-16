@@ -1,0 +1,769 @@
+@charset "utf-8";
+
+/* 自定义CSS样式 */
+
+body{
+	font-family: "Source Sans Pro", "Helvetica Neue", Arial, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+	font-family: "Source Sans Pro", "Helvetica Neue", Arial, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+
+/* 底部Footer */
+	
+.footbar {
+
+margin-left: 0;
+
+margin-right: 0;
+
+margin-top:15px;
+
+border: 0;
+
+-webkit-box-shadow: none;
+
+box-shadow: none;
+
+border-radius: 0;
+
+padding-left: 0;
+
+padding-right: 0;
+
+position: relative;
+
+background: #fff;
+
+}
+
+
+
+.footbar-default {
+
+}
+
+
+
+.footbar-container {
+
+padding-left: 10px;
+
+padding-right: 20px;
+
+text-align:center;
+
+}
+
+
+
+/* 提示 */
+
+.tip-error {
+
+	color: rgb(209, 110, 108);
+
+	vertical-align:middle;
+
+}
+
+.tip-info {
+
+	color: rgb(101, 123, 160);
+
+	vertical-align:middle;
+
+}
+
+
+
+.tip-warning {
+
+	color: rgb(209, 157, 89);
+
+	vertical-align:middle;	
+
+}
+
+
+
+.tip-info {
+
+	color: rgb(101, 123, 160);
+
+	vertical-align:middle;	
+
+}
+
+
+
+
+
+/* 搜索表单 */
+
+.form-search-box {
+
+	margin:10px;
+
+}
+
+
+
+
+
+.cursor {
+
+	cursor: pointer;
+
+}
+
+
+
+.width-auto{
+
+	width: auto;
+
+}
+
+
+
+.font12 {
+
+	font-size:12px;	
+
+}
+
+
+
+/* JQuery dataTable */
+
+.dataTables_filter {
+
+   width: 90%;
+
+   float: right;
+
+   text-align: right;
+
+}
+
+
+
+.dataTables_processing {
+
+	color:red;
+
+}
+
+
+
+
+
+/** Ajax Loading **/
+
+/* Start by setting display:none to make this hidden.
+
+   Then we position it in relation to the viewport window
+
+   with position:fixed. Width, height, top and left speak
+
+   speak for themselves. Background we set to 80% white with
+
+   our animation centered, and no-repeating */
+
+.loading-modal {
+
+    display:    none;
+
+    position:   fixed;
+
+    z-index:    2000;
+
+    top:        0;
+
+    left:       0;
+
+    height:     100%;
+
+    width:      100%;
+
+	
+
+	background: rgba( 255, 255, 255, .2 ) 
+
+                url('../img/loading_1.gif') 
+
+                50% 50% 
+
+                no-repeat;
+
+}
+
+
+
+.tip-modal {
+
+    display:    none;
+
+    position:   fixed;
+
+    z-index:    3000;
+
+    top:        0;
+
+    left:       0;
+
+    height:     100%;
+
+    width:      100%;
+
+}
+
+
+
+/* When the body has the loading class, we turn
+
+   the scrollbar off with overflow:hidden */
+
+body.loading {
+
+    overflow: hidden;   
+
+}
+
+
+
+/* Anytime the body has the loading class, our
+
+   modal element will be visible */
+
+body.loading .loading-modal {
+
+    display: block;
+
+}
+
+
+
+/* Important: overwrite ace styles for ckeditor */
+
+.FormGrid .EditTable .cke_editor tr:first-child {
+
+    display: block;
+
+}
+
+.EditTable .cke_editor tr:first-child {
+
+    display: block;
+
+}
+
+
+
+
+
+/* Overwrite jgrid styles */
+
+.ui-jqgrid tr.jqgrow td {
+
+	white-space:normal;
+
+}
+
+
+
+.ui-jqdialog-content .form-view-data {
+
+    white-space: normal;
+
+}
+
+
+
+.ui-jqgrid .ui-jqgrid-bdiv {
+
+    overflow: visible;
+
+}
+
+
+
+/* 表单编辑 */
+
+.form-edit-tip{
+
+	margin-left:5px;
+
+}
+
+
+
+.grid-search-field {
+
+	padding: 0px;
+
+	margin-bottom: 5px;
+
+	margin-left:0px;
+
+}
+
+
+
+form#grid-search-form label {
+
+	width: 82px;
+
+	min-width:82px;
+
+	text-align:right;
+
+	margin-right:5px;
+
+}
+
+
+
+form#grid-search-form button.btn-info{
+
+	margin-left:15px;
+
+}
+
+
+
+
+
+.menu-toggler > .menu-text:after {
+
+    content: "菜单";
+
+}
+
+
+
+.menu-toggler .menu-text {
+
+	word-break: keep-all;
+
+}
+
+
+
+
+
+#task-content {
+
+	position: relative;
+
+	float: left;
+
+	overflow: hidden;
+
+}
+
+
+
+.macro-component-tabitem {
+
+	position: relative;
+
+	display: block;
+
+	float: left;
+
+	height: 31px;
+
+	min-width: 101px;
+
+	padding: 5px 8px 4px 8px;
+
+	margin: 0 1px 0 0;
+
+	text-align: center;
+
+	cursor: pointer;
+
+	background: #0b559f;
+
+	line-height: 21px;
+
+	-webkit-box-sizing:content-box;
+
+}
+
+
+
+.macro-component-tabitem {
+
+	background: #ecf0f1;
+
+}
+
+
+
+.macro-tabs-item-text {
+
+	font-family: 'Microsoft Yahei',verdana;
+
+	font-size: 14px;
+
+	font-weight: blod;
+
+	line-height: 30px;
+
+	color: #1dd2af;
+
+	font-weight: bold;
+
+}
+
+
+
+.macro-component-tabclose {
+
+	position: absolute;
+
+	top: 8px;
+
+	right: 6px;
+
+	text-decoration: none;
+
+	cursor: pointer;
+
+}
+
+
+
+.macro-component-tabclose-icon {
+
+	color: #fff;
+
+}
+
+
+
+.macro-component-tabitem.current {
+
+	background: #dbe5e7;
+
+}
+
+
+
+.error{
+
+	color:#f00;
+
+	line-height:31px;
+
+	text-indent:10px;
+
+}
+
+
+
+.ace-file-multiple .file-label .file-name .icon-cloud-upload{
+
+	line-height:30px;
+
+	font-size:30px;
+
+}
+
+.zxx_img{
+
+	width:80px;
+
+	height:80px;
+
+	float:left;
+
+	position: relative;
+
+}
+
+
+
+.zxx_img a{
+
+	right: -10px;
+
+	top: -4px;
+
+	background:url("../img/closeBtn.png") no-repeat scroll 0 0 / contain rgba(0, 0, 0, 0);
+
+	height: 30px;
+
+	position: absolute;
+
+	text-indent: -9999px;
+
+	width: 30px;
+
+}
+
+
+
+#loading {
+
+	position: absolute;
+
+	top: 10px;
+
+	left: 250px;
+
+	z-index: 9999;
+
+	display: none;
+
+	width: 100px;
+
+	height: 26px;
+
+	color: #fff;
+
+	background: url("../img/loadingbg.png") no-repeat;
+
+}
+
+
+
+#loading .loadingicon {
+
+	position: absolute;
+
+	top: 0;
+
+	left: 0;
+
+	display: inline-block;
+
+	width: 26px;
+
+	height: 26px;
+
+	background: url("../img/loading.gif?21") no-repeat center;
+
+}
+
+
+
+#loading span {
+
+	margin-left: 26px;
+
+	font-family: 'Microsoft Yahei',verdana;
+
+	font-size: 14px;
+
+	font-weight: bold;
+
+	line-height: 26px;
+
+}
+
+
+
+#right_tools_wrapper {
+
+	position: absolute;
+
+	width:24px;
+
+	height:25px;
+
+	background:url('../img/reflash.png') no-repeat;
+
+	top: 50px;
+
+	right: 20px;
+
+	z-index: 99;
+
+	cursor: pointer;
+
+}
+
+
+
+#right_tools_wrapper span {
+
+	vertical-align: middle;
+
+}
+
+
+
+#right_tools_wrapper span .right_tool_icon {
+
+	color: #1dd2af;
+
+}
+
+
+
+.dataTables_wrapper .table{
+
+	margin-bottom:0px;
+
+}
+
+.dataTables_wrapper .row{
+
+	border-top: 1px solid #DDD;
+
+	padding-top: 12px;
+
+	padding-bottom: 12px;
+
+	background-color: #eff3f8;
+
+	border-bottom: 1px solid #DDD;
+
+}
+
+
+
+
+
+#reportrange {
+
+	background: #ffffff;
+
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.1);
+
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.1);
+
+	box-shadow: 0 1px 3px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.1);
+
+	color: #333333;
+
+	padding: 8px;
+
+	line-height: 18px;
+
+	cursor: pointer;
+
+}
+
+.fa-lg {
+
+	font-size: 1.3333333333333333em;
+
+	line-height: .75em;
+
+	vertical-align: -15%;
+
+}
+
+.fa {
+
+	display: inline-block;
+
+	font-family: FontAwesome;
+
+	font-style: normal;
+
+	font-weight: normal;
+
+	line-height: 1;
+
+	-webkit-font-smoothing: antialiased;
+
+	-moz-osx-font-smoothing: grayscale;
+
+}
+
+#reportrange span {
+
+	padding-left: 3px;
+
+}
+
+#reportrange .caret {
+
+	margin-top: 8px;
+
+	margin-left: 2px;
+
+}
+
+.chosen-container{
+
+	line-height:30px;
+
+}
+
+
+
+.dialog_bg { position: fixed; top: 0; left: 0; height: 100%; width: 100%; background: #808080;opacity:0.3; display: block; z-index:9998; filter:progid:DXImageTransform.Microsoft.gradient(gradientType=1,startcolorstr=#99000000,endcolorstr=#99000000);}
+
+.upload_preview{
+	clear:both;
+	padding-bottom:10px;
+}
+
+.upload_pre_item {
+  position: relative;
+  margin-top: 10px;
+  overflow: visible;
+  float: left;
+  margin-right: 10px;
+  padding: 1px;
+  width: 120px;
+  max-height: 120px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  transition: all .3s linear;
+}
+
+.upload_pre_item img {
+  width: 117px;
+  vertical-align: top;
+  max-height: 120px;
+}
+
+.btn-close {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 17px;
+  height: 17px;
+  background: url('../img/bg_icon.png') no-repeat -25px 0;
+  cursor: pointer;
+}
+
+
+
+.dataTables_processing{
+	display:none;
+}
+
+.add-jian{
+	padding-top:6px;
+	padding-left:5px;
+}
+
+
+.every_sign_extend{
+	height:50px;
+}
+
+
+
+.every_sign_extend .form-control{
+	float:left;
+}
+
+.every_sign_extend .url{
+	margin-left:20px;
+}
+
+.form-horizontal table.search th{
+	line-height:28px;
+}

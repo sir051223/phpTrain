@@ -1,0 +1,37 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>layDate Demo</title>
+<script src="laydate.js"></script>
+<style>
+html{background-color:#E3E3E3; font-size:14px; color:#000; font-family:'微软雅黑'}
+h2{line-height:30px; font-size:20px;}
+a,a:hover{ text-decoration:none;}
+pre{font-family:'微软雅黑'}
+.box{width:970px; padding:10px 20px; background-color:#fff; margin:10px auto;}
+.box a{padding-right:20px;}
+</style>
+</head>
+<body>
+<div style="width:970px; margin:10px auto;">
+    演示一：<input placeholder="请输入日期" class="laydate-icon" onclick="laydate()">
+</div>
+
+<div style="width:970px; margin:10px auto;">
+    演示二：<div class="inline layinput"><input placeholder="YYYY-MM-DD hh:mm:ss" onclick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})"><label class="laydate-icon"></label></div>
+</div>
+
+<script>
+;!function(){
+
+//laydate.skin('molv');
+
+laydate({
+   elem: '#demo'
+})
+
+}();
+</script>
+</body>
+</html>

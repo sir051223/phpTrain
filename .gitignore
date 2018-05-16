@@ -1,0 +1,8 @@
+.settings/
+.buildpath
+.project
+.idea
+composer.lock
+*.log
+*debug.php
+data/
