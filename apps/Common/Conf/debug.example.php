@@ -38,9 +38,9 @@ return array(
     
 		'DB_TYPE'   => 'mysql',
 		'DB_HOST'   => 'localhost',
-		'DB_NAME'   => 'db_learn',
-		'DB_USER'   => 'root',
-		'DB_PWD'    => '',
+		'DB_NAME'   => 'db_train',
+		'DB_USER'   => 'any',
+		'DB_PWD'    => 'passwd',
 		'DB_PORT'   => '3306',
 		'DB_PREFIX' => 'za_',
 );
